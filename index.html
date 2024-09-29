@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!--Bootstrap Icon Cdn-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <title>Tweet Tweet Project</title>
+</head>
+
+<body>
+  <div class="container py-5">
+    <div class="text-center mb-3">
+      <h1 class="text-primary">
+        Tweet Me <i class="bi bi-chat-dots text-warning"></i>
+      </h1>
+    </div>
+    <div class="text-center">
+      <span id="msg"></span>
+    </div>
+    <div class="row py-3">
+      <div class="col-md-6 px-5">
+        <form action="">
+          <textarea name="" cols="60" rows="8" id="inputText" class="px-2" placeholder="Type Your Word Here"></textarea>
+          <p><span id="increment" class="fw-bold text-success"></span> / <span id="decrement"
+              class="fw-bold text-danger"></span></p>
+          <div class="text-center">
+            <input type="submit" value="Submit" class="px-5 py-1 bg-primary border-0 rounded-3 fw-bold text-white" />
+          </div>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <div class="divElm">
+          <!-- <div
+              class="d-flex flex-row justify-content-between mb-3 align-items-center"
+              style="background-color: aliceblue; padding: 6px 7px"
+            >
+              <div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae ipsum quisquam reprehenderit dolor pariatur consequuntur facilis necessitatibus delectus dolorem, vel dolore fugit nihil ipsam hic qui doloremque ad asperiores alias.</p>
+                
+                <div class="d-flex gap-2">
+                    <p style="background-color: aqua; width: 150px; padding: 2px; border-radius: 3px;" ><span>$10</span></p>
+                  <span style="cursor: pointer"
+                    ><i class="bi bi-pencil-square text-success"></i
+                  ></span>
+                  <span style="cursor: pointer"
+                    ><i class="bi bi-trash3 text-danger"></i
+                  ></span>
+                </div>
+              </div>
+            </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!--js link-->
+  <script type="module" src="./script.js"></script>
+  <!--date fns cdn-->
+  <script src="http://cdn.date-fns.org/v1.9.0/date_fns.min.js"></script>
+</body>
+
+</html>
