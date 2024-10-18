@@ -1,5 +1,5 @@
-
-// selector
+(() => {
+  // selector
 const filterSearchElm = document.querySelector("#filterSearch");
 const inputTextElm = document.querySelector("#inputText");
 const incrementElm = document.querySelector("#increment");
@@ -22,10 +22,9 @@ function addToInputValue(inputText) {
 
 function generateDate() {
   const date = new Date();
-  const time = dateFns.format(new Date(date), 'D MMM, YY - h:mm a');
+  const time = dateFns.format(new Date(date), "D MMM, YY - h:mm a");
   return time;
-};
-
+}
 
 let incrementValue = 0;
 let decrementValue = 30;
@@ -89,6 +88,7 @@ function showInputTextToUi(textInfo) {
   showMessage("Tweet Added Successfully");
 }
 
+//  handel 
 function handleSubmitForm(e) {
   e.preventDefault();
   const inputText = getInput();
@@ -139,9 +139,11 @@ function numberManipulate() {
 
 
 
-formElm.addEventListener("submit", handleSubmitForm);
-divElm.addEventListener("click", handleManipulateUi);
-inputTextElm.addEventListener("keydown", numberManipulate);
-
-
-
+function init() {
+  // Event listeners
+  formElm.addEventListener("submit", handleSubmitForm);
+  divElm.addEventListener("click", handleManipulateUi);
+  inputTextElm.addEventListener("keydown", numberManipulate);
+}
+init();
+})();
